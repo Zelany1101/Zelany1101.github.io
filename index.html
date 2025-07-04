@@ -1,94 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pazong Thor</title>
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Patrick Hand', cursive;
-      background-color: #a9c398;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .left-panel {
-      text-align: center;
-      color: white;
-    }
-
-    .left-panel h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-
-    .turtle-img {
-      width: 80px;
-      margin: 20px auto;
-      display: block;
-    }
-
-    .info-circle {
-      background-color: #7e9d71;
-      border-radius: 50%;
-      width: 350px;
-      height: 350px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .info-text {
-      font-size: 1.1em;
-      white-space: pre-line;
-      max-width: 250px;
-    }
-
-    .right-panel {
-      background-color: white;
-      padding: 50px;
-      border-radius: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-
-    .right-panel h2 {
-      margin-top: 0;
-      font-size: 1.8em;
-      text-align: center;
-    }
-
-    .nav-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-      cursor: pointer;
-      transition: transform 0.2s;
-    }
-
-    .nav-item:hover {
-      transform: scale(1.05);
-    }
-
-    .nav-item img {
-      width: 40px;
-      margin-right: 15px;
-    }
-
-    .nav-item span {
-      font-size: 1.2em;
-      color: #3d6b4a;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   <div class="left-panel">
     <h1>Pazong<br>Thor</h1>
-    <img src="turtle1.png" alt="Turtle" class="turtle-img">
+    <img src="turtle1.png" alt="Turtle" class="turtle-img"/>
     <div class="info-circle">
       <div class="info-text">
         ASPIRING CLOUD SECURITY ENGINEER
@@ -102,24 +24,27 @@
       </div>
     </div>
   </div>
+
   <div class="right-panel">
     <h2>Site Navigation (WIP)</h2>
-    <div class="nav-item" onclick="window.location.href='#resume'">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Turtle_cartoon.svg" alt="Resume">
+    <div class="nav-item" data-target="#resume">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Turtle_cartoon.svg" alt="Resume"/>
       <span>Resume</span>
     </div>
-    <div class="nav-item" onclick="window.location.href='#blog'">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Turtle_cartoon.svg" alt="Blog">
+    <div class="nav-item" data-target="#blog">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Turtle_cartoon.svg" alt="Blog"/>
       <span>Blog Posts</span>
     </div>
-    <div class="nav-item" onclick="window.location.href='#linkedin'">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Turtle_cartoon.svg" alt="LinkedIn">
+    <div class="nav-item" data-target="#linkedin">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Turtle_cartoon.svg" alt="LinkedIn"/>
       <span>LinkedIn</span>
     </div>
-    <div class="nav-item" onclick="window.location.href='#projects'">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Turtle_cartoon.svg" alt="Projects">
+    <div class="nav-item" data-target="#projects">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Turtle_cartoon.svg" alt="Projects"/>
       <span>Creative Projects</span>
     </div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
